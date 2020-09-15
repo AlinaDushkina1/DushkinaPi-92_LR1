@@ -99,5 +99,18 @@ $git commit –m “commit1” (“commit1”- комментарий)
 $git stash - скрывает внесённые изменения в ранее созданный файл 
 $git stash apply - позволяет использовать скрытые изменения, но при этом оставить их в stash
 
+14.Работа с удалённым репозиторием Github.com
+ - прошла регистрацию на сайте
+ - создала репозиторий
+ - добавила локальный репозиторий в удалённый 
+     $ git remote set-url origin (1) ( (1) - адрес репозитория на GitHub)
+     $git push-u origin master
+ - настроила доступ через ssh 
+     $ssh-keygen-t rsa-b 4 96-C "your_email@example.com"
+     $ eval $(ssh-agent-s)
+     $ ssh-add ~/.ssh/id_rsa
+ - добавила их на github
+ - склонировала репозиторий 
+     $ git clone "(1)" ( (1) - адрес репозитория на GitHub)
 
     
